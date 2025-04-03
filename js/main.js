@@ -67,3 +67,24 @@ box3.addEventListener('mouseenter', function(){
 box3.addEventListener('mouseleave', function(){
     box3.style.backgroundColor = 'fuchsia'
 })
+
+// CHANGE EVENT
+let imgupload = document.querySelector('#imgupload');
+imgupload.addEventListener('change', function(){
+    alert('i have made a change effect');
+})
+
+let country = document.querySelector('#country');
+let body = document.querySelector('body')
+
+country.addEventListener('change', function(){
+    alert('country option changed')
+    body.style.background = '#ddd'
+})
+
+// INPUT EVENT
+let typeBox = document.querySelector('#typeBox');
+let firstname = document.querySelector('#firstname')
+firstname.addEventListener('input', function(){
+    typeBox.innerHTML = 'typing...';
+})
